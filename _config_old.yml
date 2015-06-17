@@ -1,0 +1,13 @@
+# Site settings
+title: Aprendiendo Javascript
+email: dave74@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Este blog contiene una serie de artículos que me han ayudado a mejorar mis conocimientos de Javascript.<br /> Si crees que puedes aportar algo para mejorarlo no dudes en hacer una pull request.
+baseurl: "/jsblog" # the subpath of your site, e.g. /blog/
+permalink: /:title
+url: "http://davecarter.github.io" # the base hostname & protocol for your site
+twitter_username: d4vecarter
+github_username:  davecarter
+
+# Build settings
+markdown: kramdown
