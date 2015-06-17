@@ -21,8 +21,8 @@ permalink: /:title
 
 paginate:	5
 
-url: "http://davecarter.github.io/jsblog" # the base hostname & protocol for your site
-baseurl: ""
+url: "http://davecarter.me" # the base hostname & protocol for your site
+baseurl: "/"
 
 # social icons and sharing options
 social:
