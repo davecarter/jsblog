@@ -38,6 +38,6 @@ El problema es que el *gap* entre maquetación pura CSS y modificación del DOM 
 
 ## Maquetadores CSS y Frontends JS
 
-Actualmente, con la irrupción de los frameworks JS tipo Angular, Ember y sobretodo React; la librería JS que utiliza NodeJS para crear interfaces super-performantes, no concibo una separación de roles entre CSS y JS. 
+Actualmente, con la irrupción de los frameworks JS tipo Angular, Ember y sobretodo React; la librería JS de Facebook para crear interfaces super-performantes, no concibo una separación de roles entre CSS y JS. Este es el objetivo de este blog: documentar el cierre de ese *gap* entre un perfil y otro.
 
 Así que si en algún momento te has sentido identificado, tienes curiosidad o simplemente quieres aportar algo a mis avances en JS, [suscríbete a mi feed](http://davecarter.me/feed.xml) ya que de momento no tengo implementado un sistema de comentarios. Si quieres hacerlo tú mismo no dudes en solicitar una [pull request](https://github.com/davecarter/jsblog) :)
