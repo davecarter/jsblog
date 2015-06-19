@@ -4,14 +4,11 @@ title: About
 permalink: /about/
 ---
 
-A medium inspired Jekyll blog theme. The basic idea came from the Ghost theme 
-[Readium 2.0](http://www.svenread.com/readium-ghost-theme/). I use mediator on my own blog [The Base](blog.base68.com).
+Este es el blog de [David García](https://twitter.com/d4vecarter) en el que voy a ir documentando mis avances en Javascript. El blog en sí está montado sobre [Jekyll](http://jekyllrb.com/) con un tema llamado **Mediator** creado por [https://github.com/dirkfabisch/mediator](https://github.com/dirkfabisch/mediator). Thanks for sharing! :)
 
-You can **download** the theme here:
-[https://github.com/dirkfabisch/mediator](https://github.com/dirkfabisch/mediator) 
+Está alojado en [Github pages](https://github.com/davecarter/jsblog), de modo que no sólo puedes ver en código fuente, bajarlo, hacer un fork o lo que quieras sino que además te animo a que participes si crees que puedes aportar/añadir/corregir algo en alguna de las entradas.
 
-You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Actualmente trabajo en el portal Realestate Fotocasa de [Schibsted Spain](http://www.schibsted.es/) junto a un equipazo de gente motivada y con ganas de compartir conocimiento. 
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+Si por algún motivo quieres saber algo más de mi puedes consultar mi [perfil en LinkedIn](https://www.linkedin.com/in/davidgarciaontivero)
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
