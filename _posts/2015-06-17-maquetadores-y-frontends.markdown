@@ -43,8 +43,6 @@ Actualmente, con la irrupción de los frameworks JS tipo Angular, Ember y sobret
 
 Así que si en algún momento te has sentido identificado, tienes curiosidad o simplemente quieres aportar algo a mis avances en JS, [suscríbete a mi feed](http://davecarter.me/feed.xml) ya que de momento no tengo implementado un sistema de comentarios. Si quieres hacerlo tú mismo no dudes en solicitar una [pull request](https://github.com/davecarter/jsblog) :)
 
-% if page.comments %
-
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'davecarter';
@@ -55,5 +53,3 @@ Así que si en algún momento te has sentido identificado, tienes curiosidad o s
     })();
 </script>
 <noscript>Necesitarás tener Javascript activado para poder ver los <a href="https://disqus.com/?ref_noscript" rel="nofollow">comentarios de Disqus.</a></noscript>
-
-% endif %
