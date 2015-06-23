@@ -5,6 +5,7 @@ date:   2015-06-17 23:00:00
 categories: mediator feature
 tags: opinion
 image: /assets/article_images/2015-06-17-maquetadores-y-frontends/night-track.JPG
+comments: true
 ---
 
 ### Un poco de Historia:
@@ -41,3 +42,18 @@ El problema es que el *gap* entre maquetación pura CSS y modificación del DOM 
 Actualmente, con la irrupción de los frameworks JS tipo Angular, Ember y sobretodo React; la librería JS de Facebook para crear interfaces super-performantes, no concibo una separación de roles entre CSS y JS. Este es el objetivo de este blog: documentar el cierre de ese *gap* entre un perfil y otro.
 
 Así que si en algún momento te has sentido identificado, tienes curiosidad o simplemente quieres aportar algo a mis avances en JS, [suscríbete a mi feed](http://davecarter.me/feed.xml) ya que de momento no tengo implementado un sistema de comentarios. Si quieres hacerlo tú mismo no dudes en solicitar una [pull request](https://github.com/davecarter/jsblog) :)
+
+% if page.comments %
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'davecarter';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Necesitarás tener Javascript activado para poder ver los <a href="https://disqus.com/?ref_noscript" rel="nofollow">comentarios de Disqus.</a></noscript>
+
+% endif %
