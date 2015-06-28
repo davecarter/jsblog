@@ -1,6 +1,6 @@
 Sobre este blog
 ========
-![Aarón y yo]({{site.url}}/assets/article_images/about/aaron-and-me.jpg)
+![Aarón y yo](http://davecarter.me/assets/article_images/about/aaron-and-me.jpg)
 
 Este es el blog de [David García](https://twitter.com/d4vecarter) en el que voy a ir documentando mis avances en Javascript. El blog en sí está montado sobre [Jekyll](http://jekyllrb.com/) con un tema llamado **Mediator** creado por [https://github.com/dirkfabisch/mediator](https://github.com/dirkfabisch/mediator). Thanks for sharing! :)
 
