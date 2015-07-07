@@ -74,3 +74,20 @@ pre {
 .post .post-content li {
     margin-bottom: 6px !important;
 }
+
+.protip {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    float: left;
+    padding: 30px;
+    line-height: 1.5;
+    background-color: #F0F8FF;
+    font-style: italic;
+}
+
+.protip:before {
+    content: "Off topic!";
+    display: block;
+    font-weight: bold;
+    margin-top: -10px;
+}
