@@ -75,9 +75,10 @@ Sin embargo...
 > obj1 === obj1
 true
 ```
+Como podemos observar únicamente cuando comparamos un objeto consigo mismo retorna `true`.
 
 <div class="protip">
-  Existen dos tipos de comparación de igualdad: <strong>normal (==)</strong> y <strong>estricta (===)</strong>. La normal se utiliza cuando comparas valores de un mismo tipo de datos, objeto con objeto, string con string... Si los valores <strong>undefined</strong> y <strong>null</strong> pueden aparecer en la comparación utiliza siembre la igualdad estricta y evitarás sorpresas.
+  Existen dos tipos de comparación de igualdad: <strong>normal (==)</strong> y <strong>estricta (===)</strong>. La normal se utiliza cuando comparas valores de un mismo tipo de datos, objeto con objeto, string con string... Si los valores <strong>undefined</strong> y <strong>null</strong> pueden aparecer en la comparación utiliza siembre la igualdad estricta y evitarás sorpresas conocidas como <a href="http://robertnyman.com/2008/05/16/how-to-avoid-automatic-type-conversion-in-javascript/">type coercion</a>.
 </div>
 
 ### Scope de variables
@@ -91,3 +92,17 @@ Sin embargo, la nueva especificación de JS conocida como ECMAScript6 (ES6) trae
 ```
 let myES6var = 'I'm cool';
 ```
+
+<div class="referencias">
+  <p><strong>Bibliografía:</strong></p>
+  
+  <p>Variables and assignments: <br />
+  <a href="http://speakingjs.com/es5/ch01.html#_variables_and_assignment">http://speakingjs.com/es5/ch01.html#_variables_and_assignment</a></p>
+  
+  <p>Garbage collection: <br />
+  <a href="http://docstore.mik.ua/orelly/webprog/jscript/ch11_03.htm">http://docstore.mik.ua/orelly/webprog/jscript/ch11_03.htm</a></p>
+  <p>Variables and scoping<br />
+  
+  <p>Type coercion<br />
+  <a href="http://robertnyman.com/2008/05/16/how-to-avoid-automatic-type-conversion-in-javascript/">http://robertnyman.com/2008/05/16/how-to-avoid-automatic-type-conversion-in-javascript/</a></p>
+</div>
