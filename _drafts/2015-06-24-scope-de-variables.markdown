@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Scope de variables, hoisting y closures"
-date:   2015-06-28 23:00:00
-categories: variables feature
+title:  "Scope de variables y hoisting"
+date:   2015-07-12 23:00:00
+categories: variables ES5
 tags: opinion
 image: /assets/article_images/2015-06-24-scope-de-variables/cover.jpg
 comments: true
@@ -32,6 +32,8 @@ Esta arbitrariedad a la hora de crear variables no implica que sea buena idea ha
 - No contienen un guión (-).
 
 Las convenciones de nombres no sólo se usan para las variables sino que son útiles como guías comunes para aplicar a todo el código en sí. Si quieres más información al respecto puedes consultar el [siguiente enlace](http://javascript.crockford.com/code.html). Además hay herramientas de *linting* que te van haciendo sugerencias a medida que escribes tu código. Una de ellas es [ESlint](http://eslint.org/).
+
+Actualmente la versión de JS que interpretan los navegadores de forma nativa es ECMAScript 5 de finales del 2009. El borrador final de ECMAScript 6 tiene fecha de abril de este año 2015, así que mientras que los navegadores no la tengan completamente implementada tendremos que utilizar *transpilers*, aplicaciones que traducen ES6 a ES5 como por ejemplo <a href="https://babeljs.io/">Babel</a>.
 
 #### Declarar una variable
 
@@ -83,26 +85,38 @@ Como podemos observar únicamente cuando comparamos un objeto consigo mismo reto
 
 ### Scope de variables
 
-Llamamos *scope* al ámbito de actuación de una variable. Puede ser local, es decir, si la declaramos dentro de una función sólo podremos acceder a su contenido desde una instrucción situada dentro de ese bloque.
+Llamamos *scope* al ámbito de actuación de una variable. Puede ser local, es decir, si la declaramos dentro de una función sólo podremos acceder a su contenido desde una instrucción que se ejecuta dentro de esa misma función. A esto se le llama *function-scoped*.
 
-Esto que en principio puede sonar restrictivo es algo realmente bueno. Nos interesa tener controlado quien tiene acceso a nuestras variables para que no nos las modifiquen de forma inesperada. No lo es tanto para el rendimiento de nuestra aplicación; Crear bloques con referencias a variables hacen que el sistema encargado de decidir si puede o no liberarlas de memoria no las borre por si acaso la estamos usando. A esta liberación de memoria se le conoce como *garbage collection*. Cada navegador en el que ejecutemos nuestro código JS tiene su propio sistema. En definitiva, para intentar que este sistema sea lo más eficiente posible hemos de tener controlados en todo momento estos encapsulamientos conocidos como *closures*.
-
-Sin embargo, la nueva especificación de JS conocida como ECMAScript6 (ES6) trae consigo un nuevo *scoping* de variables:
+La nueva especificación de JS conocida como **ECMAScript6 (ES6)** trae consigo dos nuevos tipos de declaración de variables que además afectan al *scoping*:
 
 ```
 let myES6var = 'I'm cool';
+cons myES6constant = 3,1415;
 ```
+`let` y `const` en ES6 vienen a reemplazar a `var`.
+
+Hasta ahora, las declaraciones realizadas mediante `var` se consideraban como *function-scoped*, es decir. Existen dentro de una función. Las nuevas declaraciones de ES6 son *block-scoped*, de modo que su ámbito de actuación se limita exclusivamente al bloque en el que han sido declaradas:
+
+```
+function currentStatus() {
+    if (initialStatus === 0) {
+        let counter = 0;
+    }
+    console.log(counter); // ReferenceError: counter is not defined
+}
+```
+La variable *counter* declarada con `let` sólo existe en el bloque creado por la instrucción `if`. En el caso de haberla declarado mediante `var` `console.log(counter)` retornaría el valor 0 ya que se encuentra dentro de la función en la que ha sido declarada.
 
 <div class="referencias">
   <p><strong>Bibliografía:</strong></p>
   
   <p>Variables and assignments: <br />
-  <a href="http://speakingjs.com/es5/ch01.html#_variables_and_assignment">http://speakingjs.com/es5/ch01.html#_variables_and_assignment</a></p>
+  <a href="http://speakingjs.com/es5/ch01.html#_variables_and_assignment">SpeakingJS</a></p>
   
-  <p>Garbage collection: <br />
-  <a href="http://docstore.mik.ua/orelly/webprog/jscript/ch11_03.htm">http://docstore.mik.ua/orelly/webprog/jscript/ch11_03.htm</a></p>
   <p>Variables and scoping<br />
+  <a href="https://leanpub.com/exploring-es6/read#leanpub-auto-variables-and-scoping">Exploring ES6</a>
+  <a href="http://people.mozilla.org/~jorendorff/es6-draft.html#sec-let-and-const-declarations">Let, Consts and declarations</a>
   
   <p>Type coercion<br />
-  <a href="http://robertnyman.com/2008/05/16/how-to-avoid-automatic-type-conversion-in-javascript/">http://robertnyman.com/2008/05/16/how-to-avoid-automatic-type-conversion-in-javascript/</a></p>
+  <a href="http://robertnyman.com/2008/05/16/how-to-avoid-automatic-type-conversion-in-javascript/">How to avoid automatic type conversion</a></p>
 </div>
