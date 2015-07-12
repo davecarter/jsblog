@@ -146,6 +146,11 @@ La variable `engine` existe por el efecto del **hoisting** pero no ha sido asign
 
 El Hoisting también aplica a las funciones. Si asignamos una función a una variable y tratamos de llamar a dicha función antes de asignarla nos lanzará una excepción.
 
+### Conclusión
+
+Un buen uso de variables optimiza los recursos que consume nuestra aplicación. Es importante conocer qué uso vamos a darle a nuestra variable para declararla de forma adecuada. Y finalmente, es esencial conocer el ámbito de actuación de una variable para evitar sobreescribirla.
+
+Si te ha gustado este artículo no dudes es difundirlo o dejar un comentario.
 
 
 <div class="referencias">
