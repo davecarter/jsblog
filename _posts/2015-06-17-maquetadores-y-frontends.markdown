@@ -4,7 +4,7 @@ title:  "Maquetadores y frontends"
 date:   2015-06-17 23:00:00
 categories: mediator feature
 tags: opinion
-image: /assets/article_images/2015-06-17-maquetadores-y-frontends/night-track.JPG
+image: /assets/article_images/night-track.jpg
 comments: true
 ---
 

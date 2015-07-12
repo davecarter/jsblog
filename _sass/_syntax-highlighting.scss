@@ -4,6 +4,7 @@
 .highlight {
     background: #fff;
     @extend %vertical-rhythm;
+    margin-bottom: 30px !important;
 
     .c     { color: #998; font-style: italic } // Comment
     .err   { color: #a61717; background-color: #e3d2d2 } // Error
@@ -69,6 +70,7 @@
 code,
 pre {
     background-color: #FEF6C6 !important;
+    margin: 0;
 }
 
 .post .post-content li {
