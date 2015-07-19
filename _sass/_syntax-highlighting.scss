@@ -73,6 +73,10 @@ pre {
     margin: 0;
 }
 
+code {
+      margin-right: 10px !important;
+}
+
 .post .post-content li {
     margin-bottom: 6px !important;
 }
@@ -101,4 +105,11 @@ pre {
     padding-bottom: 10px !important;
     font-size: 17px !important;
     line-height: 20px !important;
+}
+
+.post .post-content h3, 
+.post .post-content h4, 
+.post .post-content h5, 
+.post .post-content h6 {
+    margin-bottom: 24px !important;
 }
