@@ -21,7 +21,7 @@ Este sería una estructura típica de una **declaración de función:**
 ```
 function square(parameter){
    return parameter*parameter;
-};
+}
 
 ```
 Lo más destacado de una **declaración de una función** es que existe en todo el código desde el momento en el que es declarada. Esto significa que si la declaramos en la línea 100 de nuestro código y la invocamos en la 50 funcionará correctamente.
@@ -39,7 +39,7 @@ square(4);
 // Declaramos la función square más abajo:
 function square(parameter){
    return parameter*parameter;
-};
+}
 ```
 
 ### Expresiones con Funciones
@@ -51,6 +51,23 @@ var square = function (parameter){
    return parameter*parameter;
 };
 ```
+
+Observad que en el ejemplo asignamos a la variable `square` una función *anónima*. El motivo por el cual se omite el nombre es porque al estar definiendo un *scope* sólo podríamos acceder a esta función por su nombre **dentro** de sí misma. Lo cual carece de sentido.
+
+```
+// Asignamos la función getSquareOf a la variable square
+var square = function getSquareOf(number){
+   return typeOf getSquareOf;
+};
+
+//getSquareOf no es visible fuera de su propio scope
+typeOf getSquareOf;		// > undefined
+typeOf square;			// > function
+```
+
+> Las **declaraciones de funciones** no se finalizan en `;`mientras que las **expresiones con funciones** sí que se requiere (como todas las expresiones) acabar en `;`
+
+### Cuando usar un tipo u otro
 
 
 
@@ -65,13 +82,10 @@ Si te ha gustado esta entrada y la has encontrado útil, puedes dejar un comenta
 <div class="referencias">
   <p><strong>Bibliografía:</strong></p>
 
-  <p>Mocha Wiki: <br />
-  <a href="https://github.com/mochajs/mocha/wiki">All `bout Mocha</a></p>
+  <p>Koalite: <br />
+  <a href="http://blog.koalite.com/2011/10/javascript-diferencias-entre-declaracion-de-funcion-y-expresion-con-funcion/">Diferencias entre declaración de función y expresión con función</a></p>
   
   <p>TDD for JS: <br />
   <a href="https://jaxenter.com/behaviour-driven-development-for-javascript-part-one-107588.html">It's not about testing</a></p>
-
-<p>MDN<br />
-<a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Conditional_Operator">Conditional Ternary operator</a></p>
   
 </div>
