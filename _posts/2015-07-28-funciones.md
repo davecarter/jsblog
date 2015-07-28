@@ -103,7 +103,7 @@ Si probamos este método veremos que nos lanza un error. Para poder auto-invocar
 })();
 ```
 
-Como comenté en la entrada anterior sobre [scope de variables]()
+Como comenté en la entrada anterior sobre [scope de variables](http://davecarter.me/scope-de-variables/), 
 
 
 ### Conclusiones
