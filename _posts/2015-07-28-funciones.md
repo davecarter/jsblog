@@ -103,7 +103,14 @@ Si probamos este método veremos que nos lanza un error. Para poder auto-invocar
 })();
 ```
 
-Como comenté en la entrada anterior sobre [scope de variables](http://davecarter.me/scope-de-variables/), 
+Como comenté en la [entrada anterior](http://davecarter.me/scope-de-variables/) sobre el Hoisting en el scope de variables, en JS se busca una propiedad primero en el *scope* local y si ahí no existe se va subiendo hasta llegar al global. De modo que si utilizamos una IIFE podemos pasar objetos de entorno global al su interior para mejorar el rendimiento de dichas búsquedas locales:
+
+```
+(function(window, document){ 
+	// Accedemos a window y document
+	// de forma local
+})(window, document);
+```
 
 
 ### Conclusiones
