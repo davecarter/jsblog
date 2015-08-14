@@ -68,4 +68,4 @@ const myWallet = (currentMoney, expenses) => {
 ```
 
 ### Modulos
-Hasta ahora había que recurrir a CommonJS/RequireJS para poder usar JS modular. Con ES6 disponemos de `import` y `export` de forma nativa.
+Hasta ahora había que recurrir a CommonJS/RequireJS para poder usar JS modular. Con ES6 disponemos de `import` y `export` de forma nativa. 
