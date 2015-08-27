@@ -70,7 +70,7 @@ const myWallet = (currentMoney, expenses) => {
     return msg;
 };
 ```
-Además son multi-línea sin necesidad de usar el blackslash `\`, también podemos crear *tagged templates* que vienen a ser template strings encabezados con un nombre de función y para escapar código HTML de forma sencilla.
+Además son multi-línea sin necesidad de usar el backslash `\`, también podemos crear *tagged templates* que vienen a ser template strings encabezados con un nombre de función y para escapar código HTML de forma sencilla.
 
 ```
 fn`Hello! My name is ${name}`
@@ -78,16 +78,16 @@ fn`Hello! My name is ${name}`
 
 ### Modulos
 
-La gestión del código JS ha ido evolucionando. Hemos pasado de usar múltiples `<script>` tags en el header a minificar y concatenar diferentes archivos en uno sólo mediante *task runners* tipo [Grunt](http://gruntjs.com/) o [Gulp](http://gulpjs.com/).
+La gestión del código JS ha ido evolucionando. Hemos pasado de usar múltiples tags `<script>` en el header a minificar y concatenar diferentes archivos en uno sólo mediante *task runners* tipo [Grunt](http://gruntjs.com/) o [Gulp](http://gulpjs.com/).
 
 Aquí os dejo un ejemplo de cómo gestiona Gulp sus dependencias:
 ![GulpJS](/assets/images/gulp.png)
 
 De esta forma *modularizamos* nuestro código pero todavía nos queda pendiente la gestión de dependencias. Realmente no sabemos si una librería depende de otra o no.
 
-CommonJS/RequireJS han ofrecido hasta ahora mayor control sobre dependencias para poder así crear JS modular. Con ES6 disponemos de los nuevos `import` y `export` de aportan esta funcionalidad de forma nativa.
+CommonJS/RequireJS han ofrecido hasta ahora mayor control sobre dependencias para poder así crear JS modular. Con ES6 disponemos de los nuevos `import` y `export` que aportan esta funcionalidad de forma nativa.
 
-**Export** nos permite gestionar que partes de nuestro código queremos exponer:
+**Export** nos permite gestionar qué partes de nuestro código queremos exponer:
 
 ```
 // Si disponemos del siguiente código en el archivo message.js
@@ -133,7 +133,7 @@ Puntos a tener en cuenta cuando utilizamos módulos en ES6:
 
 ### Conclusión
 
-Esta nueva versión de Javascript conocida como ES6 no es sólo un *reestyling* sino una adaptación del lenguaje a las necesidades actuales de crear aplicaciones que corren tanto en el cliente como en el servidor.
+Esta nueva versión de Javascript conocida como ES6 o ES2015 no es sólo un *restyling* sino una adaptación del lenguaje a las necesidades actuales de crear aplicaciones que corren tanto en el cliente como en el servidor.
 
 Esta entrada no pretende ser una referencia en lo que a nivel de detalle se refiere sino más bien una recopilación de apuntes sobre las funcionalidades que personalmente más utilizo.
 
