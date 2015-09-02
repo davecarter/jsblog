@@ -7,7 +7,7 @@ gems:
 # Site settings
 title: Aprendiendo Javascript
 description: > # this means to ignore newlines until "email:"
-   Este blog contiene una serie de artículos que me han ayudado a mejorar mis conocimientos de Javascript.<br /> Si crees que puedes aportar algo para mejorarlo no dudes en hacer una <a target="_blank" style="color:black; background:yellow; padding:0 5px; text-decoration:none;" href="https://github.com/davecarter/jsblog/pulls">pull request</a>.
+   Este blog contiene una serie de artículos que me han ayudado a mejorar mis conocimientos de Javascript.<br /> Si crees que puedes aportar algo para mejorarlo no dudes en hacer una pull request.
 email: dave74@gmail.com
 #blog logo
 logo: "../assets/images/jsblog_logo.jpg"
